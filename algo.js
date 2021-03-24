@@ -13,13 +13,19 @@
         Matière demandée 
         priorité (ou nb de demandes + nb d'acceptations + nb d'absences)
 
-
 Types des variables de sortie : 
  - Liste des cours validés 
         Date
         Heure
         ID Tuteur
-        Liste des ID des tutorés 
+        Liste des ID des tutorés
         Matrière
- - Nb de priorités satisfaites (ou poircentage de remplissage)
+ (- Nb de priorités satisfaites (ou pourcentage de remplissage))
 */
+
+const CalculerLaPriorite = (tutore) => {
+    absences = tutore.nbAbsences
+    acceptations = tutore.nbAcceptations
+    demandes = tutore.nbDemandes
+    priorite = demandes - acceptations - absences
+}
