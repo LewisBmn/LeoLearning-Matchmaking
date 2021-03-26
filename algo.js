@@ -165,10 +165,10 @@ function SortByScore(elem1, elem2){
        var score1 = 0;
        var score2 = 0;
        elem1.forEach(elem => {
-              score1+=CalculerLaPriorite(elem[1]);
+              score1+=CalculerLaPriorite(elem[1]) + 1;
        });
        elem2.forEach(elem => {
-              score2+=CalculerLaPriorite(elem[1]);
+              score2+=CalculerLaPriorite(elem[1]) + 1;
        });
        if(score1<score2){
                return 1;
